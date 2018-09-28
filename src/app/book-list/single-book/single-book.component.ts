@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Book} from '../../models/book.model';
 import {ActivatedRoute, Router} from '@angular/router';
 import {BooksService} from '../../services/books.service';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-single-book',
@@ -29,4 +30,5 @@ export class SingleBookComponent implements OnInit {
   onBack() {
     this.router.navigate(['/books']);
   }
+  
 }
